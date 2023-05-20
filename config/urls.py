@@ -26,4 +26,4 @@ urlpatterns = [
     path('descarga/', views.descarga, name='descarga'),
     path('bloc/', views.bloc, name='bloc'),
     path('contacto/', views.contacto, name='contacto'),
-]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
